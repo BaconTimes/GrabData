@@ -1,0 +1,526 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		02C3B74EDE336EE35A36E8AE /* libPods-GrabData.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 18F2E08EE6821B6A4C8C8616 /* libPods-GrabData.a */; };
+		EE7506B81DB7458700946A10 /* Person+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = EE7506B51DB7458700946A10 /* Person+CoreDataClass.m */; };
+		EE7506B91DB7458700946A10 /* Person+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = EE7506B71DB7458700946A10 /* Person+CoreDataProperties.m */; };
+		EE7506BC1DB745C600946A10 /* PersonDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EE7506BB1DB745C600946A10 /* PersonDataManager.m */; };
+		EE7506C01DB74E5600946A10 /* PersonCus.m in Sources */ = {isa = PBXBuildFile; fileRef = EE7506BF1DB74E5600946A10 /* PersonCus.m */; };
+		EE7506C71DB75ACE00946A10 /* UnVisitedUrl+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = EE7506C41DB75ACE00946A10 /* UnVisitedUrl+CoreDataClass.m */; };
+		EE7506C81DB75ACE00946A10 /* UnVisitedUrl+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = EE7506C61DB75ACE00946A10 /* UnVisitedUrl+CoreDataProperties.m */; };
+		EE7506CD1DB75AE600946A10 /* VisitedUrl+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = EE7506CA1DB75AE600946A10 /* VisitedUrl+CoreDataClass.m */; };
+		EE7506CE1DB75AE600946A10 /* VisitedUrl+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = EE7506CC1DB75AE600946A10 /* VisitedUrl+CoreDataProperties.m */; };
+		EE7506D11DB75B1A00946A10 /* MiddleUrlModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EE7506D01DB75B1A00946A10 /* MiddleUrlModel.m */; };
+		EE7506D41DB75B8F00946A10 /* UnVisitedManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EE7506D31DB75B8F00946A10 /* UnVisitedManager.m */; };
+		EE7506D71DB75BA500946A10 /* VisitedManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EE7506D61DB75BA500946A10 /* VisitedManager.m */; };
+		EE8738A91DB707BF001FC721 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EE8738A81DB707BF001FC721 /* main.m */; };
+		EE8738AC1DB707BF001FC721 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EE8738AB1DB707BF001FC721 /* AppDelegate.m */; };
+		EE8738AF1DB707BF001FC721 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE8738AE1DB707BF001FC721 /* ViewController.m */; };
+		EE8738B21DB707BF001FC721 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE8738B01DB707BF001FC721 /* Main.storyboard */; };
+		EE8738B41DB707BF001FC721 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE8738B31DB707BF001FC721 /* Assets.xcassets */; };
+		EE8738B71DB707BF001FC721 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE8738B51DB707BF001FC721 /* LaunchScreen.storyboard */; };
+		EE8738C01DB7098B001FC721 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE8738BF1DB7098B001FC721 /* CoreData.framework */; };
+		EE8738C31DB709B8001FC721 /* Wahaha.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EE8738C11DB709B8001FC721 /* Wahaha.xcdatamodeld */; };
+		EE8738C61DB70E53001FC721 /* CoreDataStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = EE8738C51DB70E53001FC721 /* CoreDataStorage.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		18F2E08EE6821B6A4C8C8616 /* libPods-GrabData.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GrabData.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F53588EA57422A5CDD471E9 /* Pods-GrabData.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GrabData.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GrabData/Pods-GrabData.debug.xcconfig"; sourceTree = "<group>"; };
+		94FE89EDE01C823CE6FC58C1 /* Pods-GrabData.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GrabData.release.xcconfig"; path = "Pods/Target Support Files/Pods-GrabData/Pods-GrabData.release.xcconfig"; sourceTree = "<group>"; };
+		EE7506B41DB7458700946A10 /* Person+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Person+CoreDataClass.h"; sourceTree = "<group>"; };
+		EE7506B51DB7458700946A10 /* Person+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Person+CoreDataClass.m"; sourceTree = "<group>"; };
+		EE7506B61DB7458700946A10 /* Person+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Person+CoreDataProperties.h"; sourceTree = "<group>"; };
+		EE7506B71DB7458700946A10 /* Person+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Person+CoreDataProperties.m"; sourceTree = "<group>"; };
+		EE7506BA1DB745C600946A10 /* PersonDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonDataManager.h; sourceTree = "<group>"; };
+		EE7506BB1DB745C600946A10 /* PersonDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonDataManager.m; sourceTree = "<group>"; };
+		EE7506BE1DB74E5600946A10 /* PersonCus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonCus.h; sourceTree = "<group>"; };
+		EE7506BF1DB74E5600946A10 /* PersonCus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonCus.m; sourceTree = "<group>"; };
+		EE7506C31DB75ACE00946A10 /* UnVisitedUrl+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UnVisitedUrl+CoreDataClass.h"; sourceTree = "<group>"; };
+		EE7506C41DB75ACE00946A10 /* UnVisitedUrl+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UnVisitedUrl+CoreDataClass.m"; sourceTree = "<group>"; };
+		EE7506C51DB75ACE00946A10 /* UnVisitedUrl+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UnVisitedUrl+CoreDataProperties.h"; sourceTree = "<group>"; };
+		EE7506C61DB75ACE00946A10 /* UnVisitedUrl+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UnVisitedUrl+CoreDataProperties.m"; sourceTree = "<group>"; };
+		EE7506C91DB75AE600946A10 /* VisitedUrl+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "VisitedUrl+CoreDataClass.h"; sourceTree = "<group>"; };
+		EE7506CA1DB75AE600946A10 /* VisitedUrl+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "VisitedUrl+CoreDataClass.m"; sourceTree = "<group>"; };
+		EE7506CB1DB75AE600946A10 /* VisitedUrl+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "VisitedUrl+CoreDataProperties.h"; sourceTree = "<group>"; };
+		EE7506CC1DB75AE600946A10 /* VisitedUrl+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "VisitedUrl+CoreDataProperties.m"; sourceTree = "<group>"; };
+		EE7506CF1DB75B1A00946A10 /* MiddleUrlModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MiddleUrlModel.h; sourceTree = "<group>"; };
+		EE7506D01DB75B1A00946A10 /* MiddleUrlModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MiddleUrlModel.m; sourceTree = "<group>"; };
+		EE7506D21DB75B8F00946A10 /* UnVisitedManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnVisitedManager.h; sourceTree = "<group>"; };
+		EE7506D31DB75B8F00946A10 /* UnVisitedManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UnVisitedManager.m; sourceTree = "<group>"; };
+		EE7506D51DB75BA500946A10 /* VisitedManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VisitedManager.h; sourceTree = "<group>"; };
+		EE7506D61DB75BA500946A10 /* VisitedManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VisitedManager.m; sourceTree = "<group>"; };
+		EE8738A41DB707BF001FC721 /* GrabData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GrabData.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE8738A81DB707BF001FC721 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EE8738AA1DB707BF001FC721 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EE8738AB1DB707BF001FC721 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EE8738AD1DB707BF001FC721 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		EE8738AE1DB707BF001FC721 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		EE8738B11DB707BF001FC721 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EE8738B31DB707BF001FC721 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EE8738B61DB707BF001FC721 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EE8738B81DB707BF001FC721 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE8738BF1DB7098B001FC721 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		EE8738C21DB709B8001FC721 /* Wahaha.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Wahaha.xcdatamodel; sourceTree = "<group>"; };
+		EE8738C41DB70E53001FC721 /* CoreDataStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CoreDataStorage.h; path = ../CoreDataStorage.h; sourceTree = "<group>"; };
+		EE8738C51DB70E53001FC721 /* CoreDataStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CoreDataStorage.m; path = ../CoreDataStorage.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EE8738A11DB707BF001FC721 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE8738C01DB7098B001FC721 /* CoreData.framework in Frameworks */,
+				02C3B74EDE336EE35A36E8AE /* libPods-GrabData.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		57B7527AE5788BEDACE73328 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8F53588EA57422A5CDD471E9 /* Pods-GrabData.debug.xcconfig */,
+				94FE89EDE01C823CE6FC58C1 /* Pods-GrabData.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EE7506BD1DB74E3E00946A10 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EE7506BE1DB74E5600946A10 /* PersonCus.h */,
+				EE7506BF1DB74E5600946A10 /* PersonCus.m */,
+				EE7506CF1DB75B1A00946A10 /* MiddleUrlModel.h */,
+				EE7506D01DB75B1A00946A10 /* MiddleUrlModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EE7506C11DB75A8D00946A10 /* VisitedModel */ = {
+			isa = PBXGroup;
+			children = (
+				EE7506C91DB75AE600946A10 /* VisitedUrl+CoreDataClass.h */,
+				EE7506CA1DB75AE600946A10 /* VisitedUrl+CoreDataClass.m */,
+				EE7506CB1DB75AE600946A10 /* VisitedUrl+CoreDataProperties.h */,
+				EE7506CC1DB75AE600946A10 /* VisitedUrl+CoreDataProperties.m */,
+				EE7506D51DB75BA500946A10 /* VisitedManager.h */,
+				EE7506D61DB75BA500946A10 /* VisitedManager.m */,
+			);
+			path = VisitedModel;
+			sourceTree = "<group>";
+		};
+		EE7506C21DB75A9500946A10 /* UnVisitedModel */ = {
+			isa = PBXGroup;
+			children = (
+				EE7506C31DB75ACE00946A10 /* UnVisitedUrl+CoreDataClass.h */,
+				EE7506C41DB75ACE00946A10 /* UnVisitedUrl+CoreDataClass.m */,
+				EE7506C51DB75ACE00946A10 /* UnVisitedUrl+CoreDataProperties.h */,
+				EE7506C61DB75ACE00946A10 /* UnVisitedUrl+CoreDataProperties.m */,
+				EE7506D21DB75B8F00946A10 /* UnVisitedManager.h */,
+				EE7506D31DB75B8F00946A10 /* UnVisitedManager.m */,
+			);
+			path = UnVisitedModel;
+			sourceTree = "<group>";
+		};
+		EE87389B1DB707BF001FC721 = {
+			isa = PBXGroup;
+			children = (
+				EE8738A61DB707BF001FC721 /* GrabData */,
+				EE8738A51DB707BF001FC721 /* Products */,
+				EE8738BE1DB7098B001FC721 /* Frameworks */,
+				57B7527AE5788BEDACE73328 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		EE8738A51DB707BF001FC721 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EE8738A41DB707BF001FC721 /* GrabData.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EE8738A61DB707BF001FC721 /* GrabData */ = {
+			isa = PBXGroup;
+			children = (
+				EE8738AA1DB707BF001FC721 /* AppDelegate.h */,
+				EE8738AB1DB707BF001FC721 /* AppDelegate.m */,
+				EE8738AD1DB707BF001FC721 /* ViewController.h */,
+				EE8738AE1DB707BF001FC721 /* ViewController.m */,
+				EE7506BD1DB74E3E00946A10 /* Model */,
+				EED3927D1DB741C80087624D /* DataBase */,
+				EE8738B01DB707BF001FC721 /* Main.storyboard */,
+				EE8738B31DB707BF001FC721 /* Assets.xcassets */,
+				EE8738B51DB707BF001FC721 /* LaunchScreen.storyboard */,
+				EE8738B81DB707BF001FC721 /* Info.plist */,
+				EE8738A71DB707BF001FC721 /* Supporting Files */,
+				EE8738C11DB709B8001FC721 /* Wahaha.xcdatamodeld */,
+			);
+			path = GrabData;
+			sourceTree = "<group>";
+		};
+		EE8738A71DB707BF001FC721 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EE8738A81DB707BF001FC721 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EE8738BE1DB7098B001FC721 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EE8738BF1DB7098B001FC721 /* CoreData.framework */,
+				18F2E08EE6821B6A4C8C8616 /* libPods-GrabData.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EED3927D1DB741C80087624D /* DataBase */ = {
+			isa = PBXGroup;
+			children = (
+				EE7506C21DB75A9500946A10 /* UnVisitedModel */,
+				EE7506C11DB75A8D00946A10 /* VisitedModel */,
+				EE7506B41DB7458700946A10 /* Person+CoreDataClass.h */,
+				EE7506B51DB7458700946A10 /* Person+CoreDataClass.m */,
+				EE7506B61DB7458700946A10 /* Person+CoreDataProperties.h */,
+				EE7506B71DB7458700946A10 /* Person+CoreDataProperties.m */,
+				EE8738C41DB70E53001FC721 /* CoreDataStorage.h */,
+				EE8738C51DB70E53001FC721 /* CoreDataStorage.m */,
+				EE7506BA1DB745C600946A10 /* PersonDataManager.h */,
+				EE7506BB1DB745C600946A10 /* PersonDataManager.m */,
+			);
+			path = DataBase;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EE8738A31DB707BF001FC721 /* GrabData */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE8738BB1DB707BF001FC721 /* Build configuration list for PBXNativeTarget "GrabData" */;
+			buildPhases = (
+				855A85918B59AAD448AA25AD /* [CP] Check Pods Manifest.lock */,
+				EE8738A01DB707BF001FC721 /* Sources */,
+				EE8738A11DB707BF001FC721 /* Frameworks */,
+				EE8738A21DB707BF001FC721 /* Resources */,
+				C61322A135216C0329DB764E /* [CP] Embed Pods Frameworks */,
+				90FCCCD417A6EBB3851783DC /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GrabData;
+			productName = GrabData;
+			productReference = EE8738A41DB707BF001FC721 /* GrabData.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EE87389C1DB707BF001FC721 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = iOSBacon;
+				TargetAttributes = {
+					EE8738A31DB707BF001FC721 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 4384B426Q7;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = EE87389F1DB707BF001FC721 /* Build configuration list for PBXProject "GrabData" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EE87389B1DB707BF001FC721;
+			productRefGroup = EE8738A51DB707BF001FC721 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EE8738A31DB707BF001FC721 /* GrabData */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EE8738A21DB707BF001FC721 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE8738B71DB707BF001FC721 /* LaunchScreen.storyboard in Resources */,
+				EE8738B41DB707BF001FC721 /* Assets.xcassets in Resources */,
+				EE8738B21DB707BF001FC721 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		855A85918B59AAD448AA25AD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		90FCCCD417A6EBB3851783DC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GrabData/Pods-GrabData-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C61322A135216C0329DB764E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GrabData/Pods-GrabData-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EE8738A01DB707BF001FC721 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE7506CD1DB75AE600946A10 /* VisitedUrl+CoreDataClass.m in Sources */,
+				EE7506B81DB7458700946A10 /* Person+CoreDataClass.m in Sources */,
+				EE7506C71DB75ACE00946A10 /* UnVisitedUrl+CoreDataClass.m in Sources */,
+				EE8738AF1DB707BF001FC721 /* ViewController.m in Sources */,
+				EE7506BC1DB745C600946A10 /* PersonDataManager.m in Sources */,
+				EE8738C31DB709B8001FC721 /* Wahaha.xcdatamodeld in Sources */,
+				EE8738C61DB70E53001FC721 /* CoreDataStorage.m in Sources */,
+				EE8738AC1DB707BF001FC721 /* AppDelegate.m in Sources */,
+				EE7506B91DB7458700946A10 /* Person+CoreDataProperties.m in Sources */,
+				EE8738A91DB707BF001FC721 /* main.m in Sources */,
+				EE7506D41DB75B8F00946A10 /* UnVisitedManager.m in Sources */,
+				EE7506CE1DB75AE600946A10 /* VisitedUrl+CoreDataProperties.m in Sources */,
+				EE7506C81DB75ACE00946A10 /* UnVisitedUrl+CoreDataProperties.m in Sources */,
+				EE7506D11DB75B1A00946A10 /* MiddleUrlModel.m in Sources */,
+				EE7506D71DB75BA500946A10 /* VisitedManager.m in Sources */,
+				EE7506C01DB74E5600946A10 /* PersonCus.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EE8738B01DB707BF001FC721 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EE8738B11DB707BF001FC721 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EE8738B51DB707BF001FC721 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EE8738B61DB707BF001FC721 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EE8738B91DB707BF001FC721 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EE8738BA1DB707BF001FC721 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EE8738BC1DB707BF001FC721 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8F53588EA57422A5CDD471E9 /* Pods-GrabData.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 4384B426Q7;
+				INFOPLIST_FILE = GrabData/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = NXIN.GrabData;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EE8738BD1DB707BF001FC721 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 94FE89EDE01C823CE6FC58C1 /* Pods-GrabData.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 4384B426Q7;
+				INFOPLIST_FILE = GrabData/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = NXIN.GrabData;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EE87389F1DB707BF001FC721 /* Build configuration list for PBXProject "GrabData" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE8738B91DB707BF001FC721 /* Debug */,
+				EE8738BA1DB707BF001FC721 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EE8738BB1DB707BF001FC721 /* Build configuration list for PBXNativeTarget "GrabData" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE8738BC1DB707BF001FC721 /* Debug */,
+				EE8738BD1DB707BF001FC721 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		EE8738C11DB709B8001FC721 /* Wahaha.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				EE8738C21DB709B8001FC721 /* Wahaha.xcdatamodel */,
+			);
+			currentVersion = EE8738C21DB709B8001FC721 /* Wahaha.xcdatamodel */;
+			path = Wahaha.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = EE87389C1DB707BF001FC721 /* Project object */;
+}
