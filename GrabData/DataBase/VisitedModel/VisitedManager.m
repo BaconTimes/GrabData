@@ -24,22 +24,13 @@ static VisitedManager * visitedManager;
     return visitedManager;
 }
 
-- (NSEntityDescription *)visitedUrlEntity:(NSManagedObjectContext *)moc {
-    return [NSEntityDescription entityForName:@"VisitedUrl" inManagedObjectContext:moc];
-}
-
-- (BOOL)save:(NSManagedObjectContext *)moc {
-    NSError *saveError = nil;
-    if (![moc save:&saveError]) {
-        NSLog(@"Unresolved saveError %@, %@", saveError, [saveError userInfo]);
-    }
-    return (saveError == nil);
+- (NSEntityDescription *)entityDescription {
+    return [NSEntityDescription entityForName:@"VisitedUrl" inManagedObjectContext:self.moc];
 }
 
 - (BOOL)isExistedModel:(MiddleUrlModel *)urlModel {
-    NSManagedObjectContext * moc = [[CoreDataStorage sharedInstance] managedObjectContext];
     NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
-    NSEntityDescription *entity = [NSEntityDescription entityForName:@"VisitedUrl" inManagedObjectContext:moc];
+    NSEntityDescription *entity = [NSEntityDescription entityForName:@"VisitedUrl" inManagedObjectContext:self.moc];
     [fetchRequest setEntity:entity];
     // Specify criteria for filtering which objects to fetch
     NSPredicate *predicate = [NSPredicate predicateWithFormat:@"url = %@", urlModel.url];
@@ -47,7 +38,7 @@ static VisitedManager * visitedManager;
     // Specify how the fetched objects should be sorted
     
     NSError *error = nil;
-    NSArray *fetchedObjects = [moc executeFetchRequest:fetchRequest error:&error];
+    NSArray *fetchedObjects = [self.moc executeFetchRequest:fetchRequest error:&error];
     if (fetchedObjects == nil) {
         NSLog(@"Unresolved saveError %@, %@", error, [error userInfo]);
         return NO;
@@ -60,10 +51,9 @@ static VisitedManager * visitedManager;
     if ([self isExistedModel:urlModel]) {
         return NO;
     } else {
-        NSManagedObjectContext * moc = [[CoreDataStorage sharedInstance] managedObjectContext];
-        VisitedUrl * visitedSysModel = [(VisitedUrl *)[NSManagedObject alloc] initWithEntity:[self visitedUrlEntity:moc] insertIntoManagedObjectContext:moc];
+        VisitedUrl * visitedSysModel = [(VisitedUrl *)[NSManagedObject alloc] initWithEntity:self.entityDescription insertIntoManagedObjectContext:self.moc];
         visitedSysModel.url = urlModel.url;
-        return [self save:moc];
+        return [self save];
     }
 }
 

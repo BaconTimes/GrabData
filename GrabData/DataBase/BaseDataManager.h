@@ -10,6 +10,8 @@
 #import <CoreData/CoreData.h>
 #import "CoreDataStorage.h"
 
+@class MiddleUrlModel;
+
 @interface BaseDataManager : NSObject
 
 @property (nonatomic, strong, readonly) NSEntityDescription * entityDescription;
@@ -17,5 +19,11 @@
 @property (nonatomic, strong, readonly) NSManagedObjectContext * moc;
 
 - (BOOL)save;
+
+- (BOOL) deleteUrlModel:(MiddleUrlModel *)urlModel;
+
+- (NSArray <MiddleUrlModel *> *)getDataWithLimit:(NSInteger)limit;
+
+- (MiddleUrlModel *)getOneUrl;
 
 @end

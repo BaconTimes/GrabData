@@ -10,4 +10,16 @@
 
 @implementation MiddleUrlModel
 
+- (instancetype)initWithUrl:(NSString *)url{
+    self = [super init];
+    if (self) {
+        _url = url;
+    }
+    return self;
+}
+
++ (instancetype)modelWithUrl:(NSString *)url {
+    return [[self alloc] initWithUrl:url];
+}
+
 @end

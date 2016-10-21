@@ -12,4 +12,8 @@
 
 @property (nonatomic, strong) NSString * url;
 
+- (instancetype)initWithUrl:(NSString *)url;
+
++ (instancetype)modelWithUrl:(NSString *)url;
+
 @end
