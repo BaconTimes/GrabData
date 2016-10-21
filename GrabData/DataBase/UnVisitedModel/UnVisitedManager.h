@@ -6,11 +6,11 @@
 //  Copyright © 2016年 iOSBacon. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import "BaseDataManager.h"
 
 @class MiddleUrlModel;
 
-@interface UnVisitedManager : NSObject
+@interface UnVisitedManager : BaseDataManager
 
 + (instancetype)sharedUnVisitedManager;
 

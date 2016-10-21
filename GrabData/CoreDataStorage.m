@@ -53,8 +53,11 @@ static CoreDataStorage * sharedInstance;
     
 //    NSString * docsPath = [self persistentStoreDirectory];
     NSString * dataBaseName = [NSString stringWithFormat:@"%@.sqlite",@"Wahaha"];
-#warning if running on simulator, the path should be the computer path
-    NSString * storePath = [@"/Users/iosbacon/Desktop/OC_Learning/GrabData/GrabData" stringByAppendingPathComponent:dataBaseName]; //docsPath
+#if TARGET_IPHONE_SIMULATOR
+    NSString * storePath = [@"/Users/iosbacon/Desktop/anotherGrab/GrabData" stringByAppendingPathComponent:dataBaseName]; //docsPath
+#elif TARGET_OS_IPHONE
+    NSString * storePath = [docsPath stringByAppendingPathComponent:dataBaseName]; //
+#endif
     _persistentStoreCoordinator = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel:[self managedObjectModel]];
     if (storePath) {
         NSLog(@"the path of dataBase is %@", storePath);

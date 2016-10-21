@@ -52,7 +52,7 @@ static VisitedManager * visitedManager;
         NSLog(@"Unresolved saveError %@, %@", error, [error userInfo]);
         return NO;
     } else {
-        return (fetchedObjects > 0);
+        return (fetchedObjects.count > 0);
     }
 }
 
@@ -61,7 +61,7 @@ static VisitedManager * visitedManager;
         return NO;
     } else {
         NSManagedObjectContext * moc = [[CoreDataStorage sharedInstance] managedObjectContext];
-        VisitedUrl * visitedSysModel = [(VisitedUrl *)[NSManagedObjectContext alloc] initWithEntity:[self visitedUrlEntity:moc] insertIntoManagedObjectContext:moc];
+        VisitedUrl * visitedSysModel = [(VisitedUrl *)[NSManagedObject alloc] initWithEntity:[self visitedUrlEntity:moc] insertIntoManagedObjectContext:moc];
         visitedSysModel.url = urlModel.url;
         return [self save:moc];
     }
